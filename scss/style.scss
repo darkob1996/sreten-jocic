@@ -1,0 +1,87 @@
+@import "tipography";
+
+// COLOR VARIABLES
+$very-dark-blue: #1b1d23;
+$dark-grey: #60636d;
+$medium-grey: #7d828f;
+$light-grey: #c8ccd8;
+$very-light-grey: #eeeff4;
+$red: #df5656;
+
+// FONT VARIABLES
+$font-primary: "Spartan", sans-serif;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 10px = 1rem
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  line-height: 1.3rem;
+}
+
+.container {
+  max-width: 105rem;
+  margin: 0 auto;
+}
+
+.header {
+}
+
+// NAVIGACIJA
+.navigation {
+  padding: 5rem 0;
+
+  display: flex;
+  align-items: center;
+  &__logo {
+    margin-right: 7rem;
+    path {
+      width: 5rem;
+      height: 4rem;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+
+    &--item {
+      margin-right: 4rem;
+      font-size: 1.2rem;
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: $medium-grey;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// HERO
+.hero {
+  height: 85vh;
+  background-image: linear-gradient(
+      rgba($very-dark-blue, 0.35),
+      rgba($very-dark-blue, 0.35)
+    ),
+    url(/starter-code/assets/home/desktop/image-hero-paramour.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  &__content {
+  }
+}

@@ -1,0 +1,51 @@
+.heading-1 {
+  font-size: 6rem;
+  color: #fff; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  line-height: 1.3rem; }
+
+.container {
+  max-width: 105rem;
+  margin: 0 auto; }
+
+.navigation {
+  padding: 5rem 0;
+  display: flex;
+  align-items: center; }
+  .navigation__logo {
+    margin-right: 7rem; }
+    .navigation__logo path {
+      width: 5rem;
+      height: 4rem; }
+  .navigation__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center; }
+    .navigation__list--item {
+      margin-right: 4rem;
+      font-size: 1.2rem; }
+      .navigation__list--item a:link,
+      .navigation__list--item a:visited {
+        text-decoration: none;
+        color: #7d828f;
+        font-weight: 700; }
+
+.hero {
+  height: 85vh;
+  background-image: linear-gradient(rgba(27, 29, 35, 0.35), rgba(27, 29, 35, 0.35)), url(/starter-code/assets/home/desktop/image-hero-paramour.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
